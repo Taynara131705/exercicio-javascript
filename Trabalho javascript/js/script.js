@@ -24,9 +24,9 @@ console.log(numero);
 const numero1= a * (b + c) -d / d;
 console.log(numero1);
  
-//{[(10 - 4) / 2] * 3} + 1
+//{[(10 - 4) / 2] * 3} + 1;
 const e = 10
-const numero2= (e -c) / a * b + a;
+const numero2= (((e -c) / a )* b )+ a;
 console.log(numero2);
  
 //Crie um poema utilizando interpolação para inserir variáveis em diferentes linhas
@@ -85,16 +85,19 @@ alert(`A área do retângulo com base ${base} e altura ${altura} é ${area}.`);
    
    
     // Verifica se a letra é uma vogal
-    if ('aeiou'.includes(letra)) {
-      console.log(`${letra} é uma vogal.`);
-    } else if (letra >= 'a' && letra <= 'z') {
-      // Verifica se a letra está entre 'a' e 'z' para determinar se é uma consoante
-      console.log(`${letra} é uma consoante.`);
+    function verificarVogal(caractere) {
+caractere = caractere.toLowerCase();
+    if (caractere === 'a' || caractere === 'e' || caractere === 'i' || caractere === 'o' || caractere === 'u') {
+        console.log(`${caractere} é uma vogal.`);
     } else {
-      // Se não for uma letra, exibe uma mensagem
-      console.log(`${letra} não é uma letra.`);
+        console.log(`${caractere} não é uma vogal.`);
     }
-  }
+}
+verificarVogal('a'); 
+verificarVogal('E'); 
+verificarVogal('b'); 
+verificarVogal('x'); 
+verificarVogal('I');
  
   // Solicita uma letra ao usuário
   let letra = prompt("Digite uma letra:");
