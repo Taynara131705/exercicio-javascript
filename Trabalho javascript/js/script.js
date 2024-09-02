@@ -77,7 +77,7 @@ const area = base * altura;
 // Exibe o resultado formatado
 
 alert(`A área do retângulo com base ${base} e altura ${altura} é ${area}.`);
-prompt("Digite a base do retângulo:");
+
 
   //7-Crie uma condicional para verificar se o caractere é uma vogal
  /// Função para verificar se uma letra é uma vogal ou consoante
